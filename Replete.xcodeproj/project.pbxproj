@@ -14,6 +14,7 @@
 		ED06DC321B3F62E800100331 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED06DC311B3F62E800100331 /* Images.xcassets */; };
 		ED06DC351B3F62E800100331 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED06DC331B3F62E800100331 /* LaunchScreen.xib */; };
 		ED06DC411B3F62E800100331 /* RepleteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED06DC401B3F62E800100331 /* RepleteTests.m */; };
+		ED1A8FDB1F3F45B1005B6E60 /* bundle.c in Sources */ = {isa = PBXBuildFile; fileRef = ED1A8FD91F3F45B1005B6E60 /* bundle.c */; };
 		ED93310C1B4013F0004B09FD /* ReplViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED93310B1B4013F0004B09FD /* ReplViewController.swift */; };
 		ED93310F1B401411004B09FD /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED93310D1B401411004B09FD /* HistoryTableViewCell.swift */; };
 		ED9331131B40151A004B09FD /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9331111B40151A004B09FD /* History.swift */; };
@@ -46,6 +47,9 @@
 		ED06DC3A1B3F62E800100331 /* RepleteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepleteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED06DC3F1B3F62E800100331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED06DC401B3F62E800100331 /* RepleteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepleteTests.m; sourceTree = "<group>"; };
+		ED1A8FD81F3F45A0005B6E60 /* bundle_inflate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bundle_inflate.h; sourceTree = "<group>"; };
+		ED1A8FD91F3F45B1005B6E60 /* bundle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bundle.c; sourceTree = "<group>"; };
+		ED1A8FDA1F3F45B1005B6E60 /* bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bundle.h; sourceTree = "<group>"; };
 		ED93310A1B4013EF004B09FD /* Replete-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Replete-Bridging-Header.h"; sourceTree = "<group>"; };
 		ED93310B1B4013F0004B09FD /* ReplViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplViewController.swift; sourceTree = "<group>"; };
 		ED93310D1B401411004B09FD /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -130,6 +134,9 @@
 				ED93310A1B4013EF004B09FD /* Replete-Bridging-Header.h */,
 				EDC941D21F3D60E700906862 /* NSData+Gzip.h */,
 				EDC941D31F3D613900906862 /* NSData+Gzip.m */,
+				ED1A8FD81F3F45A0005B6E60 /* bundle_inflate.h */,
+				ED1A8FDA1F3F45B1005B6E60 /* bundle.h */,
+				ED1A8FD91F3F45B1005B6E60 /* bundle.c */,
 			);
 			path = Replete;
 			sourceTree = "<group>";
@@ -320,6 +327,7 @@
 				EDC941D41F3D613A00906862 /* NSData+Gzip.m in Sources */,
 				ED93310F1B401411004B09FD /* HistoryTableViewCell.swift in Sources */,
 				ED9331131B40151A004B09FD /* History.swift in Sources */,
+				ED1A8FDB1F3F45B1005B6E60 /* bundle.c in Sources */,
 				ED93310C1B4013F0004B09FD /* ReplViewController.swift in Sources */,
 				ED06DC2A1B3F62E800100331 /* AppDelegate.m in Sources */,
 				ED9331141B40151A004B09FD /* Message.swift in Sources */,
