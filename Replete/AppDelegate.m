@@ -250,7 +250,7 @@ void bootstrap(JSContextRef ctx) {
         char* contents = bundle_get_contents((char*)[path UTF8String]);
         
         if (contents) {
-            [NSString stringWithUTF8String:contents];
+            return [NSString stringWithUTF8String:contents];
         } else {
             NSLog(@"Failed to load %@", path);
         }
