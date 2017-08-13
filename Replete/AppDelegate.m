@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "ABYContextManager.h"
 #import "ABYUtils.h"
-#import "NSData+Gzip.h"
 
 @interface AppDelegate ()
 
