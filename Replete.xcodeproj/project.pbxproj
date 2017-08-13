@@ -19,6 +19,7 @@
 		ED93310F1B401411004B09FD /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED93310D1B401411004B09FD /* HistoryTableViewCell.swift */; };
 		ED9331131B40151A004B09FD /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9331111B40151A004B09FD /* History.swift */; };
 		ED9331141B40151A004B09FD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9331121B40151A004B09FD /* Message.swift */; };
+		EDFFAC3B1F3FE38700AADBDA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFFAC3A1F3FE38700AADBDA /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		ED93310D1B401411004B09FD /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		ED9331111B40151A004B09FD /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		ED9331121B40151A004B09FD /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EDFFAC3A1F3FE38700AADBDA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FC809025F4AED9EEED53D5FC /* libPods-Replete.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Replete.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFFAC3B1F3FE38700AADBDA /* libz.tbd in Frameworks */,
 				8199E7F6C3E896126D0BD8D7 /* libPods-Replete.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +90,7 @@
 		DBA6446E3C68D11D9E9A7EF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EDFFAC3A1F3FE38700AADBDA /* libz.tbd */,
 				FC809025F4AED9EEED53D5FC /* libPods-Replete.a */,
 			);
 			name = Frameworks;
