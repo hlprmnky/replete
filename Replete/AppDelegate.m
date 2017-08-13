@@ -246,13 +246,13 @@ void bootstrap(JSContextRef ctx) {
     
     self.context[@"REPLETE_LOAD"] = ^(NSString *path) {
         
-        NSLog(@"Loading %@", path);
+        //NSLog(@"Loading %@", path);
         char* contents = bundle_get_contents((char*)[path UTF8String]);
         
         if (contents) {
             return [NSString stringWithUTF8String:contents];
         } else {
-            NSLog(@"Failed to load %@", path);
+            //NSLog(@"Failed to load %@", path);
         }
         
         return (NSString*)nil;
@@ -419,11 +419,9 @@ void bootstrap(JSContextRef ctx) {
 
 -(NSString*)getClojureScriptVersion
 {
-    NSString *outPath = [[NSBundle mainBundle] pathForResource:@"out" ofType:nil];
-   
     // Grab bundle.js; it is relatively small
-    NSString* bundleJs = [NSString stringWithContentsOfFile:[NSString stringWithFormat:@"%@/replete/bundle.js", outPath]
-                                                   encoding:NSUTF8StringEncoding error:nil];
+    NSString* bundleJs = [NSString stringWithUTF8String:bundle_get_contents("replete/bundle.js")];
+    
     if (bundleJs) {
         return [[bundleJs substringFromIndex:29] componentsSeparatedByString:@" "][0];
     } else {
